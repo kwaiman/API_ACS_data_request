@@ -53,12 +53,32 @@ pip freeze --local > requirements.txt
 cat requirements.txt
 ```
 
+To install all the packages (and the corresponding verisons) required for this project in a new virtual environment, move the requirements.txt to the working directory and type the following in shell:
+``` shell
+pip install -r requirements.txt
+```
+
+To exit the virtual environment:
+``` shell
+deactivate
+```
+
+## 3. Select the virtual environment as the Kernel on Jupyter Notebook
+
+Install the virtual environment as a kernel onto Jupyter Notebook
+``` shell
+ipython kernel install --user --name=project_acs
+```
+
+Then, ![image](https://user-images.githubusercontent.com/64258575/174858711-ed6d2451-8019-46a3-9024-abea0b3169a4.png)
 
 
-## 3. Get an API Key
+## 4. Get an API Key
 
-https://api.census.gov/data/key_signup.html; input the fields required and save the key as a .txt file
+Go to: https://api.census.gov/data/key_signup.html; 
+
+Input the name of the university (University of Chicago) and your email address in the required fields; the key will be sent to the email you entered; save the key as a .txt file.
 
 
-## 4. Run the Jupyter Notebook
+## 5. Run the Jupyter Notebook
 Follow along the markdowns in the notebook to query the data for the male population in Chicagoland (Chicago Metropolitan Area) by age and race by inputting the year desired (the latest is 2019).
