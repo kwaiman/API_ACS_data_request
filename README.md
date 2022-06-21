@@ -35,16 +35,30 @@ https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activat
 
 Packages we need for this project:
 * pandas
-* numpy
 * requests
 
 ``` shell
 pip install pandas
-pip install numpy
 pip install requests
 ```
 
+We can check that now we have the packages we need in this virtual environment:
+``` shell
+pip list
+```
+
+Now, we can export the packages and versions needed for this project to requirements.txt
+``` shell
+pip freeze --local > requirements.txt
+cat requirements.txt
+```
+
+
+
 ## 3. Get an API Key
+
+https://api.census.gov/data/key_signup.html; input the fields required and save the key as a .txt file
 
 
 ## 4. Run the Jupyter Notebook
+Follow along the markdowns in the notebook to query the data for the male population in Chicagoland (Chicago Metropolitan Area) by age and race by inputting the year desired (the latest is 2019).
