@@ -70,7 +70,9 @@ Install the virtual environment as a kernel onto Jupyter Notebook
 ipython kernel install --user --name=project_acs
 ```
 
-Then, ![image](https://user-images.githubusercontent.com/64258575/174858711-ed6d2451-8019-46a3-9024-abea0b3169a4.png)
+Then, select "Kernel" > "Change Kernel" > name of your virtual environment 
+
+![image](https://user-images.githubusercontent.com/64258575/174858711-ed6d2451-8019-46a3-9024-abea0b3169a4.png)
 
 
 ## 4. Get an API Key
