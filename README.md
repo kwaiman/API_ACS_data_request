@@ -6,6 +6,11 @@ This project allows user to pull the data on the male population grouped by race
 
 ## 1. Create a virtual environment
 
+* (a) Install the virtualenv package
+``` shell
+pip install virtualenv
+```
+
 
 https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate
 
