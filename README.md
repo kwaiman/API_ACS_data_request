@@ -36,10 +36,12 @@ https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activat
 Packages we need for this project:
 * pandas
 * requests
+* jupyter (if you are using jupyter notebook)
 
 ``` shell
 pip install pandas
 pip install requests
+pip install jupyter
 ```
 
 We can check that now we have the packages we need in this virtual environment:
@@ -67,7 +69,7 @@ deactivate
 
 Install the virtual environment as a kernel onto Jupyter Notebook
 ``` shell
-ipython kernel install --user --name=project_acs
+python -m ipykernel install --name=project_acs
 ```
 
 Then, select "Kernel" > "Change Kernel" > name of your virtual environment 
@@ -83,4 +85,8 @@ Input the name of the university (University of Chicago) and your email address 
 
 
 ## 5. Run the Jupyter Notebook
-Follow along the markdowns in the notebook to query the data for the male population in Chicagoland (Chicago Metropolitan Area) by age and race by inputting the year desired (the latest is 2019).
+### Notebook for using API to Pull the Data from ACS in US Census Bureau
+Follow along the markdowns in the notebook *acs_data_pull.ipynb* to query the data for the male population in Chicagoland (Chicago Metropolitan Area) by age and race by inputting the year desired (the latest is 2019).
+
+### Notebook for cross-validating the results
+The notebook *data_cross_validation_CDC_wonder.ipynb* contains the dataset downloaded from the CDS Wonder Database for cross-validating the results from the API data pull, follow along the markdowns to query the dataset for reference point check to ensure that the data results from the API data pull is sensible.
