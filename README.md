@@ -2,7 +2,7 @@
 A Jupyter Notebook to pull the data for American Community Survey
 
 ## Description of the project
-This project allows user to pull the data on the male population grouped by race and age in the Chicago Metropolitan Area from American Community Survey (ACS) by the US Census Bureau. Users can input the year of the ACS they desire and get the data accordingly.
+This project allows user to pull the data on the male population grouped by race and age in American cities from American Community Survey (ACS) by the US Census Bureau. Users can input the year and the city of the ACS they desire and get the data accordingly.
 
 ## 1. Create a virtual environment
 
@@ -86,7 +86,7 @@ Input the name of the university (University of Chicago) and your email address 
 
 ## 5. Run the Jupyter Notebook
 ### Notebook for using API to Pull the Data from ACS in US Census Bureau
-Follow along the markdowns in the notebook *acs_data_pull.ipynb* to query the data for the male population in Chicagoland (Chicago Metropolitan Area) by age and race by inputting the year desired (the latest is 2019).
+Follow along the markdowns in the notebook *acs_data_pull.ipynb* to query the data for the male population in Chicago city by age and race by inputting the year desired (the latest is 2019). The notebook also demonstrates how to query the data for other American cities.
 
 ### Notebook for cross-validating the results
 The notebook *data_cross_validation_CDC_wonder.ipynb* contains the dataset downloaded from the CDS Wonder Database for cross-validating the results from the API data pull, follow along the markdowns to query the dataset for reference point check to ensure that the data results from the API data pull is sensible.
